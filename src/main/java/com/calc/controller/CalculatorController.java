@@ -14,7 +14,7 @@ public class CalculatorController {
     private CalculatorService calculatorService;
 
     @PostMapping("/doMath")
-    public Integer doMath(@RequestBody Calculator calculator){
-        return calculatorService.doMath(calculator);
+    public String doMath(@RequestBody Calculator calculator){
+        return calculatorService.doMath(calculator) == null ? "Wrong operation" : calculatorService.doMath(calculator).toString();
     }
 }
