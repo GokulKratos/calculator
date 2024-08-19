@@ -16,7 +16,7 @@ public class CalculatorServiceTest {
         int sub = calculatorService.doMath(new Calculator(Integer.valueOf(5),Integer.valueOf(5),"-"));
         int mul = calculatorService.doMath(new Calculator(Integer.valueOf(5),Integer.valueOf(5),"*"));
         int div = calculatorService.doMath(new Calculator(Integer.valueOf(5),Integer.valueOf(5),"/"));
-        assertEquals(10,add);
+        assertEquals(100,add);
         assertEquals(0,sub);
         assertEquals(25,mul);
         assertEquals(1,div);
